@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		57111AF22088C270009BE764 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57111AF12088C270009BE764 /* GoogleService-Info.plist */; };
+		57111AF9208B6967009BE764 /* UsersAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57111AF8208B6967009BE764 /* UsersAuthenticationManager.swift */; };
 		572383942087746F00E8B761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572383932087746F00E8B761 /* AppDelegate.swift */; };
 		572383962087746F00E8B761 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572383952087746F00E8B761 /* LoginViewController.swift */; };
 		572383992087746F00E8B761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572383972087746F00E8B761 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		0190D2F52E080DFA20AC3249 /* Pods-Cab2GoDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cab2GoDriver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cab2GoDriver/Pods-Cab2GoDriver.release.xcconfig"; sourceTree = "<group>"; };
 		19906EC12B0FFC51B4C676C1 /* Pods-Cab2GoDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cab2GoDriver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cab2GoDriver/Pods-Cab2GoDriver.debug.xcconfig"; sourceTree = "<group>"; };
 		57111AF12088C270009BE764 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		57111AF8208B6967009BE764 /* UsersAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAuthenticationManager.swift; sourceTree = "<group>"; };
 		572383902087746F00E8B761 /* Cab2GoDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cab2GoDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		572383932087746F00E8B761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		572383952087746F00E8B761 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57111AF7208B694C009BE764 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				57111AF8208B6967009BE764 /* UsersAuthenticationManager.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
 		572383872087746F00E8B761 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				572383932087746F00E8B761 /* AppDelegate.swift */,
+				57111AF7208B694C009BE764 /* Supporting */,
 				576F65432087C75100650D66 /* View */,
 				576F65442087C75D00650D66 /* Controller */,
 				576F65422087C74100650D66 /* Model */,
@@ -239,6 +250,7 @@
 			files = (
 				572383962087746F00E8B761 /* LoginViewController.swift in Sources */,
 				572383A6208774D100E8B761 /* MapViewController.swift in Sources */,
+				57111AF9208B6967009BE764 /* UsersAuthenticationManager.swift in Sources */,
 				572383942087746F00E8B761 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +399,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPNJ4FRNPT;
 				INFOPLIST_FILE = Cab2GoDriver/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yevhenii.Cab2GoDriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -403,7 +418,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPNJ4FRNPT;
 				INFOPLIST_FILE = Cab2GoDriver/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yevhenii.Cab2GoDriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
