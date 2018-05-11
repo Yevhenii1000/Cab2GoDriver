@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,14 +16,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Cab2GoDriver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taxi" translatesAutoresizingMaskIntoConstraints="NO" id="tq9-D1-0nE">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="7zP-cQ-QZy" userLabel="LoginStack View">
-                                <rect key="frame" x="205" y="266" width="190" height="68"/>
+                                <rect key="frame" x="92.5" y="299.5" width="190" height="68"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Email" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ybg-2c-mmJ">
                                         <rect key="frame" x="0.0" y="0.0" width="190" height="31"/>
@@ -42,7 +46,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Rij-ln-TPG" userLabel="ButtonsStack View">
-                                <rect key="frame" x="215" y="360" width="170" height="80"/>
+                                <rect key="frame" x="102.5" y="393.5" width="170" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e4-3t-Lqa">
                                         <rect key="frame" x="0.0" y="0.0" width="170" height="40"/>
@@ -70,7 +74,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cab2Go Driver" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq4-bW-1wL">
-                                <rect key="frame" x="204" y="78" width="192" height="47"/>
+                                <rect key="frame" x="91.5" y="111.5" width="192" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="Bri-hI-0YF">
                                         <variation key="heightClass=compact" constant="26"/>
@@ -84,7 +88,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserImage" translatesAutoresizingMaskIntoConstraints="NO" id="MBb-eT-Ybb">
-                                <rect key="frame" x="253" y="147" width="94" height="94"/>
+                                <rect key="frame" x="140.5" y="180.5" width="94" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="94" id="Gba-hR-hrf"/>
                                     <constraint firstAttribute="height" constant="94" id="Vbp-NA-YRR"/>
@@ -144,21 +148,21 @@
             <objects>
                 <viewController id="rCE-ua-T4f" customClass="MapViewController" customModule="Cab2GoDriver" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ngZ-BV-Fb8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PeopleTaxi" translatesAutoresizingMaskIntoConstraints="NO" id="oNA-mS-PWz">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAl-8i-I7l">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.83137254901960789" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="U0z-GY-9Jc">
-                                <rect key="frame" x="5" y="74" width="590" height="442"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0z-GY-9Jc">
+                                <rect key="frame" x="5" y="74" width="365" height="509"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yw-EE-S1c">
-                                <rect key="frame" x="227.5" y="532" width="144" height="42"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yw-EE-S1c">
+                                <rect key="frame" x="115" y="599" width="144" height="42"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.53725490200000003" blue="0.58039215690000001" alpha="0.33055971746575341" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <state key="normal" title="Cancel Rider">
@@ -197,6 +201,9 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="yK9-rc-2VG"/>
                         <barButtonItem key="leftBarButtonItem" title="Log Out" id="VP0-Jv-vtP">
                             <color key="tintColor" red="0.77119685910000002" green="0.3258329761" blue="0.3374258765" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="logOutButtonPressed:" destination="rCE-ua-T4f" id="vh2-CK-tmA"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

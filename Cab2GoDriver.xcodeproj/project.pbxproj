@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		57111AF22088C270009BE764 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57111AF12088C270009BE764 /* GoogleService-Info.plist */; };
 		57111AF9208B6967009BE764 /* UsersAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57111AF8208B6967009BE764 /* UsersAuthenticationManager.swift */; };
+		57167C19209CA49900D3F726 /* CabUnitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57167C18209CA49900D3F726 /* CabUnitManager.swift */; };
 		572383942087746F00E8B761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572383932087746F00E8B761 /* AppDelegate.swift */; };
 		572383962087746F00E8B761 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572383952087746F00E8B761 /* LoginViewController.swift */; };
 		572383992087746F00E8B761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572383972087746F00E8B761 /* Main.storyboard */; };
 		5723839B2087747000E8B761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5723839A2087747000E8B761 /* Assets.xcassets */; };
 		5723839E2087747000E8B761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5723839C2087747000E8B761 /* LaunchScreen.storyboard */; };
 		572383A6208774D100E8B761 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572383A5208774D100E8B761 /* MapViewController.swift */; };
+		5729BC52209B601F00F801CE /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5729BC51209B601F00F801CE /* DatabaseManager.swift */; };
+		5729BC54209B605B00F801CE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5729BC53209B605B00F801CE /* Constants.swift */; };
 		86A5AA19239CFC4FAC359CB6 /* Pods_Cab2GoDriver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851458C42228DE4388CED901 /* Pods_Cab2GoDriver.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,7 @@
 		19906EC12B0FFC51B4C676C1 /* Pods-Cab2GoDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cab2GoDriver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cab2GoDriver/Pods-Cab2GoDriver.debug.xcconfig"; sourceTree = "<group>"; };
 		57111AF12088C270009BE764 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57111AF8208B6967009BE764 /* UsersAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAuthenticationManager.swift; sourceTree = "<group>"; };
+		57167C18209CA49900D3F726 /* CabUnitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabUnitManager.swift; sourceTree = "<group>"; };
 		572383902087746F00E8B761 /* Cab2GoDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cab2GoDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		572383932087746F00E8B761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		572383952087746F00E8B761 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +35,8 @@
 		5723839D2087747000E8B761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5723839F2087747000E8B761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		572383A5208774D100E8B761 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		5729BC51209B601F00F801CE /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		5729BC53209B605B00F801CE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		851458C42228DE4388CED901 /* Pods_Cab2GoDriver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cab2GoDriver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,6 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				57111AF8208B6967009BE764 /* UsersAuthenticationManager.swift */,
+				5729BC51209B601F00F801CE /* DatabaseManager.swift */,
+				57167C18209CA49900D3F726 /* CabUnitManager.swift */,
+				5729BC53209B605B00F801CE /* Constants.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -250,8 +259,11 @@
 			files = (
 				572383962087746F00E8B761 /* LoginViewController.swift in Sources */,
 				572383A6208774D100E8B761 /* MapViewController.swift in Sources */,
+				5729BC52209B601F00F801CE /* DatabaseManager.swift in Sources */,
 				57111AF9208B6967009BE764 /* UsersAuthenticationManager.swift in Sources */,
 				572383942087746F00E8B761 /* AppDelegate.swift in Sources */,
+				57167C19209CA49900D3F726 /* CabUnitManager.swift in Sources */,
+				5729BC54209B605B00F801CE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

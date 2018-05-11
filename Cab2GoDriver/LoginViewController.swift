@@ -34,18 +34,27 @@ class LoginViewController: UIViewController {
     @IBAction func signInButtonPressed(_ sender: UIButton) {
         if emailTextField.text != "" && passwordTextField.text != "" {
             
-            Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { user, error in
+            UsersAuthenticationManager.authManager.login(email: emailTextField.text!, password: passwordTextField.text!, loginHandler: { message in
                 
-                //Handle the error of signing up
-                if error != nil {
+                if message != nil {
                     
+                    self.alertUser(title: "Authentication Error", message: message!)
                     
+                } else {
+                    CabUnitManager.defaultManager.driver = self.emailTextField.text!
+                    
+                    self.emailTextField.text = ""
+                    self.passwordTextField.text = ""
+                    
+                    self.performSegue(withIdentifier: self.mapSegueIdentifier, sender: nil)
                     
                 }
                 
-                self.performSegue(withIdentifier: self.mapSegueIdentifier, sender: self)
-                
             })
+            
+        } else {
+            
+            alertUser(title: "Email And Password Are Required", message: "Please, enter your Email and Password in the text fields")
             
         }
         
@@ -54,15 +63,20 @@ class LoginViewController: UIViewController {
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
         if emailTextField.text != "" && passwordTextField.text != "" {
             
-            UsersAuthorizationManager.authManager.signUp(email: emailTextField.text!, password: passwordTextField.text!, loginHandler: {message in
+            UsersAuthenticationManager.authManager.signUp(email: emailTextField.text!, password: passwordTextField.text!, loginHandler: {message in
                 
                 if message != nil {
                     //Message is not nil, so there is an error. Unable to register.
                     self.alertUser(title: "Problem With Creating A New User", message: message!)
                     
                 } else {
-                    //Registration is successful
                     
+                    CabUnitManager.defaultManager.driver = self.emailTextField.text!
+                    
+                    self.emailTextField.text = ""
+                    self.passwordTextField.text = ""
+                    
+                    self.performSegue(withIdentifier: self.mapSegueIdentifier, sender: nil)
                     
                 }
                 

@@ -20,12 +20,12 @@ struct LoginErrorCodeMessage {
     static let weakPasswordMessage = "Password Should Be At Least 6 Characters Long"
 }
 
-class UsersAuthorizationManager {
+class UsersAuthenticationManager {
     
     //Creating a singleton for this class
-    private static let instance = UsersAuthorizationManager()
+    private static let instance = UsersAuthenticationManager()
     
-    static var authManager: UsersAuthorizationManager {
+    static var authManager: UsersAuthenticationManager {
         
         return instance
         
@@ -40,6 +40,8 @@ class UsersAuthorizationManager {
             } else {
                 
                 if user?.uid != nil {
+                    
+                    DatabaseManager.defaultManager.saveUser(withID: (user?.uid)!, email: email, password: password)
                     
                     self.login(email: email, password: password, loginHandler: loginHandler)
                 }
@@ -69,6 +71,22 @@ class UsersAuthorizationManager {
             
         })
         
+    }
+    
+    func logOut() -> Bool {
+        
+        if Auth.auth().currentUser != nil {
+            
+            do {
+                try Auth.auth().signOut()
+                return true
+            }
+            catch {
+                return false
+            }
+            
+        }
+        return true
     }
     
     private func handleErrors(error: NSError, loginHandler: LoginHandler?) {
